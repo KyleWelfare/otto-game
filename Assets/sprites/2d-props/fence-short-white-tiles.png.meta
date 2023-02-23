@@ -46,9 +46,9 @@ TextureImporter:
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  alignment: 7
+  spritePivot: {x: 0.5, y: 0}
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -121,8 +121,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59202f82d5c21db49be6ff8b23b1f4e9
-      internalID: 1797633939
+      spriteID: 17798c4ca5bcf674ea0f61fd42b58c2f
+      internalID: 805038005
       vertices: []
       indices: 
       edges: []
@@ -142,8 +142,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e9a0bf07ada1474f9c402c5900c820f
-      internalID: -1936442988
+      spriteID: 8f5aba5a78c393b4e831c0915371b3d3
+      internalID: 487076428
       vertices: []
       indices: 
       edges: []
@@ -163,8 +163,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 574a5e2426ffb7f4f874921f887f45f8
-      internalID: 55794448
+      spriteID: 53fa43263103ca64fa795c06a7881881
+      internalID: -2035084565
       vertices: []
       indices: 
       edges: []
@@ -180,9 +180,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      fence-short-white-tiles_2: 55794448
-      fence-short-white-tiles_0: 1797633939
-      fence-short-white-tiles_1: -1936442988
+      fence-short-white-tiles_2: -2035084565
+      fence-short-white-tiles_0: 805038005
+      fence-short-white-tiles_1: 487076428
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
