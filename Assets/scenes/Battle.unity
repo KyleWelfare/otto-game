@@ -788,6 +788,7 @@ GameObject:
   m_Component:
   - component: {fileID: 402691554}
   - component: {fileID: 402691553}
+  - component: {fileID: 402691555}
   m_Layer: 0
   m_Name: borderbush-lightgreen
   m_TagString: Untagged
@@ -862,6 +863,19 @@ Transform:
   m_Father: {fileID: 1037325718}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &402691555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 402691552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a39d297f13c62e146926d4e4af0b325f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  freezeXZAxis: 1
 --- !u!1 &465599329
 GameObject:
   m_ObjectHideFlags: 0
@@ -976,7 +990,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a39d297f13c62e146926d4e4af0b325f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  freezeXZAxis: 1
+  freezeXZAxis: 0
 --- !u!212 &499038466
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2087,13 +2101,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.91, y: 1.9199991, z: -24.400002}
+  m_LocalPosition: {x: 0.91, y: 1.9200001, z: -28.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1612175503}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 20, y: 0, z: 0}
 --- !u!114 &963194229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3386,7 +3400,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1612175502}
   m_LocalRotation: {x: 0.17364816, y: 0, z: 0, w: 0.9848078}
-  m_LocalPosition: {x: 0, y: 0.34, z: -4.71}
+  m_LocalPosition: {x: 0, y: 2.48, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3656,7 +3670,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1859901953}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.91, y: 1.92, z: -24.4}
+  m_LocalPosition: {x: 0.91, y: 1.92, z: -28.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4082,7 +4096,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1901591482, guid: 20ba490775ab16a48b0c1684e1be5536, type: 3}
       propertyPath: freezeXZAxis
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1645375985804597036, guid: 20ba490775ab16a48b0c1684e1be5536, type: 3}
       propertyPath: m_Name
@@ -4094,7 +4108,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7300971478254174221, guid: 20ba490775ab16a48b0c1684e1be5536, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.47
+      value: -4.22
       objectReference: {fileID: 0}
     - target: {fileID: 7300971478254174221, guid: 20ba490775ab16a48b0c1684e1be5536, type: 3}
       propertyPath: m_LocalPosition.y
