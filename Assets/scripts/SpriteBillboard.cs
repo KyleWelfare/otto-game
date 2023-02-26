@@ -1,7 +1,6 @@
 using UnityEngine;
 
-public class SpriteBillboard : MonoBehaviour
-{
+public class SpriteBillboard : MonoBehaviour {
     [SerializeField]
     bool freezeXZAxis = true;
 
