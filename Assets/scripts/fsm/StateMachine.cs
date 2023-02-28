@@ -2,13 +2,13 @@ public class StateMachine
 {
     public State currentState { get; private set; }
 
-    public void Initialize(State startingState)
+    public void initialize(State startingState)
     {
         currentState = startingState;
         currentState.enter();
     }
 
-    public void ChangeState(State newState)
+    public void changeState(State newState)
     {
         currentState.exit();
         currentState = newState;
