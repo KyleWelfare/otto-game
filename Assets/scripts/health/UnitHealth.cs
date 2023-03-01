@@ -1,26 +1,31 @@
 using UnityEngine;
 
-public class UnitHealth : MonoBehaviour, IDamageable {
+public class UnitHealth : MonoBehaviour, IDamageable
+{
    [SerializeField] private int maxHealth;
    private int currentHealth;
 
-   void Awake() {
+   void Awake()
+   {
       this.currentHealth = this.maxHealth;
    }
 
-   public void damage(int damageAmt) {
+   public void Damage(int damageAmt)
+   {
       this.currentHealth -= damageAmt;
       if (this.currentHealth <= 0)
       {
-         this.die();
+         this.Die();
       }
    }
 
-   public void heal(int healAmt) {
+   public void Heal(int healAmt)
+   {
       this.currentHealth = Mathf.Min(this.currentHealth += healAmt, this.maxHealth);
    }
 
-   public void die() {
+   public void Die()
+   {
       this.gameObject.SetActive(false);
    }
 }

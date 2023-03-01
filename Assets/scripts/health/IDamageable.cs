@@ -1,5 +1,6 @@
-public interface IDamageable {
-    void damage(int damageAmt);
-    void heal(int healAmt);
-    void die();
+public interface IDamageable
+{
+   void Damage(int damageAmt);
+   void Heal(int healAmt);
+   void Die();
 }
