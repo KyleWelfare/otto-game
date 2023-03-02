@@ -1,14 +1,20 @@
 using UnityEngine;
+using UnityEditor;
 
 public class VisualDebugger : MonoBehaviour
 {
-    private static GameObject visualDebuggerGO;
+    [SerializeField]
+    private static GameObject textBox;
 
-    public static void Log(string message)
+#if UNITY_EDITOR || DEVELOPMENT_BUILD
+    [RuntimeInitializeOnLoadMethod]
+    public static void Initialize()
     {
-        if (!VisualDebugger.visualDebuggerGO)
-        {
-            // VisualDebugger.visualDebuggerGO = Instantiate(debugger prefab);
-        }
+        var go = Instantiate(Resources.Load<GameObject>("VisualDebugger"));
+
+        go.SetActive(false);
+        DontDestroyOnLoad(go);
+        go.transform.SetParent(FindObjectOfType<Canvas>().transform);
     }
+#endif
 }

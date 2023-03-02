@@ -10,7 +10,6 @@ public class BattleManager : MonoBehaviour
 
     void Awake()
     {
-        VisualDebugger.Log("test");
         stateMachine = new StateMachine();
         states = new Dictionary<string, State>() {
             { "intro", new BattleIntroState("intro", this) },
