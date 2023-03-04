@@ -29,11 +29,11 @@ public class ResourceBarUI : MonoBehaviour
     {
         float fillAmt = (float)this.currentHealth / (float)this.maxHealth;
         // handle edge cases
-        if (fillAmt < 1 && fillAmt > 0.91)
-            fillAmt = (float)0.91;
-        else if (fillAmt > 0 && fillAmt < 0.083)
-            fillAmt = (float)0.1;
+        // if (fillAmt < 1 && fillAmt > 0.91)
+        //     fillAmt = (float)0.91;
+        // else if (fillAmt > 0 && fillAmt < 0.083)
+        //     fillAmt = (float)0.1;
 
-        this.fillBar.fillAmount = fillAmt;
+        // this.fillBar.fillAmount = fillAmt;
     }
 }
