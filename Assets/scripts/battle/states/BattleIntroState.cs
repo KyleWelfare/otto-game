@@ -14,7 +14,6 @@ public class BattleIntroState : State
     {
         if (Time.time - this.startTime > introDuration)
         {
-            Debug.Log("state change hit");
             this.battleManager.stateMachine.ChangeState(this.battleManager.states["actionSelect"]);
         }
     }
