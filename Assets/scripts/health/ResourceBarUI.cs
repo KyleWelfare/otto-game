@@ -34,6 +34,6 @@ public class ResourceBarUI : MonoBehaviour
         // else if (fillAmt > 0 && fillAmt < 0.083)
         //     fillAmt = (float)0.1;
 
-        // this.fillBar.fillAmount = fillAmt;
+        this.fillBar.fillAmount = fillAmt;
     }
 }
