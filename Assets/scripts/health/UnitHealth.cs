@@ -21,14 +21,10 @@ public class UnitHealth : MonoBehaviour, IDamageable
     {
         this.currentHealth -= damageAmt;
 
-        if (this.currentHealth >= 0)
-        {
+        if (this.currentHealth > 0)
             this.UpdateUi();
-        }
         else
-        {
             this.Die();
-        }
     }
 
     public void Heal(int healAmt)

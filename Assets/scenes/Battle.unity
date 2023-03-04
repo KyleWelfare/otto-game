@@ -3691,7 +3691,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBarUi: {fileID: 1009032758}
-  maxHealth: 3
+  maxHealth: 20
 --- !u!1001 &1590888333
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5224,10 +5224,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: HealthBarText
       objectReference: {fileID: 0}
+    - target: {fileID: 2838641037096920982, guid: e356c5239b80c26418d7b64c55d9cb37, type: 3}
+      propertyPath: m_text
+      value: 'x / y
+
+'
+      objectReference: {fileID: 0}
     - target: {fileID: 2838641037357135985, guid: e356c5239b80c26418d7b64c55d9cb37, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 963194227}
+    - target: {fileID: 2838641037749047026, guid: e356c5239b80c26418d7b64c55d9cb37, type: 3}
+      propertyPath: m_Type
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2838641037749047026, guid: e356c5239b80c26418d7b64c55d9cb37, type: 3}
+      propertyPath: m_FillAmount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2838641037749047026, guid: e356c5239b80c26418d7b64c55d9cb37, type: 3}
+      propertyPath: m_FillMethod
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2838641037749047026, guid: e356c5239b80c26418d7b64c55d9cb37, type: 3}
+      propertyPath: m_FillOrigin
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2838641037749047037, guid: e356c5239b80c26418d7b64c55d9cb37, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
