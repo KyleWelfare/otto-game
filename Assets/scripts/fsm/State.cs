@@ -1,30 +1,30 @@
 using UnityEngine;
 
-public class State
+public abstract class State
 {
-   protected string stateName;
-   protected BattleManager battleManager;
+    protected string stateName;
+    protected BattleManager battleManager;
 
-   protected bool uiInputEnabled;
-   protected bool gameplayInputEnabled;
-   protected float startTime;
+    protected bool uiInputEnabled;
+    protected bool gameplayInputEnabled;
+    protected float startTime;
 
-   public State(string name, BattleManager battleManager)
-   {
-      this.stateName = name;
-      this.battleManager = battleManager;
-   }
+    public State(BattleManager battleManager)
+    {
+        this.stateName = this.GetType().Name;
+        this.battleManager = battleManager;
+    }
 
-   public virtual void Enter()
-   {
-      Debug.Log(this.stateName + " entered.");
-      this.startTime = Time.time;
-   }
+    public virtual void Enter()
+    {
+        Debug.Log(this.stateName + " entered.");
+        this.startTime = Time.time;
+    }
 
-   public virtual void Exit()
-   {
-      Debug.Log(this.stateName + " exited.");
-   }
+    public virtual void Exit()
+    {
+        Debug.Log(this.stateName + " exited.");
+    }
 
-   public virtual void Update() { }
+    public virtual void Update() { }
 }

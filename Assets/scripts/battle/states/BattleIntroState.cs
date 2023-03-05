@@ -4,7 +4,7 @@ public class BattleIntroState : State
 {
     private float introDuration = 2f;
 
-    public BattleIntroState(string name, BattleManager battleManager) : base(name, battleManager)
+    public BattleIntroState(BattleManager battleManager) : base(battleManager)
     {
         this.uiInputEnabled = false;
         this.gameplayInputEnabled = false;
@@ -14,7 +14,7 @@ public class BattleIntroState : State
     {
         if (Time.time - this.startTime > introDuration)
         {
-            this.battleManager.stateMachine.ChangeState(this.battleManager.states["actionSelect"]);
+            this.battleManager.stateMachine.ChangeState(this.battleManager.states[EBattleStates.ActionSelect]);
         }
     }
 }

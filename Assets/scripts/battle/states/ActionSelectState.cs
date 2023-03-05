@@ -1,22 +1,30 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ActionSelectState : State
 {
-   public ActionSelectState(string name, BattleManager battleManager) : base(name, battleManager)
-   {
-      this.uiInputEnabled = true;
-      this.gameplayInputEnabled = false;
-   }
+    private Button[] actionButtons;
 
-   public override void Enter()
-   {
-      base.Enter();
-      this.battleManager.bamMenu.SetActive(true);
-   }
+    public ActionSelectState(BattleManager battleManager) : base(battleManager)
+    {
+        this.uiInputEnabled = true;
+        this.gameplayInputEnabled = false;
+    }
 
-   public override void Exit()
-   {
-      base.Exit();
-      this.battleManager.bamMenu.SetActive(false);
-   }
+    void Awake()
+    {
+        this.actionButtons = GameObject.Find("BAM").GetComponentsInChildren<Button>();
+    }
+
+    public override void Enter()
+    {
+        base.Enter();
+        this.battleManager.bamMenu.SetActive(true);
+    }
+
+    public override void Exit()
+    {
+        base.Exit();
+        this.battleManager.bamMenu.SetActive(false);
+    }
 }
