@@ -676,7 +676,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 375476283}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.72, y: 0, z: 4.86}
+  m_LocalPosition: {x: 10.55, y: 0, z: 2.57}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5142,6 +5142,14 @@ PrefabInstance:
     - target: {fileID: 2838641036572451258, guid: e356c5239b80c26418d7b64c55d9cb37, type: 3}
       propertyPath: m_Name
       value: KnightEnemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 2838641036669416450, guid: e356c5239b80c26418d7b64c55d9cb37, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 2838641036669416450, guid: e356c5239b80c26418d7b64c55d9cb37, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 4.13
       objectReference: {fileID: 0}
     - target: {fileID: 2838641037096920982, guid: e356c5239b80c26418d7b64c55d9cb37, type: 3}
       propertyPath: m_text
