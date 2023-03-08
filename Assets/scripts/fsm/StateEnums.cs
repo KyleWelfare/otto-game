@@ -2,6 +2,6 @@ public enum EBattleStates
 {
     Intro,
     ActionSelect,
-    PlayerAttack,
+    EntityMoveToPositionState,
     EnemyAttack
 }

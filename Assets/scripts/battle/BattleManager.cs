@@ -8,6 +8,7 @@ public class BattleManager : MonoBehaviour
     public Dictionary<EBattleStates, State> states { get; private set; }
 
     public GameObject bamMenu;
+    public GameObject player;
 
     void Awake()
     {
@@ -24,11 +25,11 @@ public class BattleManager : MonoBehaviour
     {
         states = new Dictionary<EBattleStates, State>() {
             { EBattleStates.Intro, new BattleIntroState(this) },
-            { EBattleStates.ActionSelect, new ActionSelectState(this) }
-            // { EBattleStates.PlayerAttack, new PlayerAttackState(this) },
+            { EBattleStates.ActionSelect, new ActionSelectState(this) },
+            { EBattleStates.EntityMoveToPositionState, new EntityMoveToPositionState(this) }
             // { EBattleStates.EnemyAttack, new EnemyAttackState(this) }
         };
-        stateMachine.Initialize(states[EBattleStates.Intro]);
+        stateMachine.Initialize(states[0]);
     }
 
     public void ChangeState(EBattleStates newState)

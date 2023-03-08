@@ -14,6 +14,15 @@ public class ActionSelectState : State
     void Awake()
     {
         this.actionButtons = GameObject.Find("BAM").GetComponentsInChildren<Button>();
+        foreach (Button button in actionButtons)
+        {
+            button.onClick.AddListener(() =>
+            {
+                EntityMoveToPositionState moveState = (EntityMoveToPositionState)this.battleManager.states[EBattleStates.EntityMoveToPositionState];
+                moveState.setParams(this.battleManager.player, new Vector3(1, 0, 0), 1.5f);
+                this.battleManager.stateMachine.ChangeState(moveState);
+            });
+        }
     }
 
     public override void Enter()

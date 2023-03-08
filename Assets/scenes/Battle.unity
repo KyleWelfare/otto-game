@@ -584,6 +584,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bamMenu: {fileID: 1405096426}
+  player: {fileID: 676517501}
 --- !u!4 &249713479
 Transform:
   m_ObjectHideFlags: 0
@@ -904,17 +905,6 @@ Transform:
   m_Father: {fileID: 1037325718}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &499038468 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2838641036572451262, guid: e356c5239b80c26418d7b64c55d9cb37, type: 3}
-  m_PrefabInstance: {fileID: 2838641036878796986}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0a844811481cc64a84827333fa4d239, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &506712744
 GameObject:
   m_ObjectHideFlags: 0
@@ -1086,19 +1076,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 537689043}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 499038468}
-        m_TargetAssemblyTypeName: UnitHealth, Assembly-CSharp
-        m_MethodName: Damage
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 5
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &537689043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1450,6 +1428,30 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &676517511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 676517501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8270b79799b120459b9fdb18d5f0045, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &676517512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 676517501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a148bef93e77574fb4cce4095f40503, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &678691343
 GameObject:
   m_ObjectHideFlags: 0
@@ -3697,19 +3699,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1442665795}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 499038468}
-        m_TargetAssemblyTypeName: UnitHealth, Assembly-CSharp
-        m_MethodName: Damage
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1442665795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5950,6 +5940,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1645375985804597036, guid: 20ba490775ab16a48b0c1684e1be5536, type: 3}
       insertIndex: -1
       addedObject: {fileID: 676517506}
+    - targetCorrespondingSourceObject: {fileID: 1645375985804597036, guid: 20ba490775ab16a48b0c1684e1be5536, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 676517511}
+    - targetCorrespondingSourceObject: {fileID: 1645375985804597036, guid: 20ba490775ab16a48b0c1684e1be5536, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 676517512}
   m_SourcePrefab: {fileID: 100100000, guid: 20ba490775ab16a48b0c1684e1be5536, type: 3}
 --- !u!1001 &7380606839889066137
 PrefabInstance:
