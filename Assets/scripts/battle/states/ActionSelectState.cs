@@ -9,18 +9,14 @@ public class ActionSelectState : State
     {
         this.uiInputEnabled = true;
         this.gameplayInputEnabled = false;
-    }
 
-    void Awake()
-    {
-        this.actionButtons = GameObject.Find("BAM").GetComponentsInChildren<Button>();
+        this.actionButtons = this.battleManager.bamMenu.GetComponentsInChildren<Button>(true);
+        Debug.Log("Action Buttons" + this.actionButtons);
         foreach (Button button in actionButtons)
         {
             button.onClick.AddListener(() =>
             {
-                EntityMoveToPositionState moveState = (EntityMoveToPositionState)this.battleManager.states[EBattleStates.EntityMoveToPositionState];
-                moveState.setParams(this.battleManager.player, new Vector3(1, 0, 0), 1.5f);
-                this.battleManager.stateMachine.ChangeState(moveState);
+                this.battleManager.ChangeState(EBattleStates.PlayerAttack);
             });
         }
     }

@@ -23,6 +23,6 @@ public class MoveToTargetInSeconds : MonoBehaviour
             yield return new WaitForEndOfFrame();
         }
         this.gameObject.transform.position = target;
-        OnArrivedAtTarget(this.gameObject);
+        OnArrivedAtTarget.Invoke(this.gameObject);
     }
 }

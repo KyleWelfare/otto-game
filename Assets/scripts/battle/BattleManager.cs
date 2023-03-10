@@ -9,6 +9,7 @@ public class BattleManager : MonoBehaviour
 
     public GameObject bamMenu;
     public GameObject player;
+    public GameObject[] enemies;
 
     void Awake()
     {
@@ -21,13 +22,17 @@ public class BattleManager : MonoBehaviour
         this.stateMachine.currentState.Update();
     }
 
+    void FixedUpdate()
+    {
+        this.stateMachine.currentState.FixedUpdate();
+    }
+
     private void InitStates()
     {
         states = new Dictionary<EBattleStates, State>() {
             { EBattleStates.Intro, new BattleIntroState(this) },
             { EBattleStates.ActionSelect, new ActionSelectState(this) },
-            { EBattleStates.EntityMoveToPositionState, new EntityMoveToPositionState(this) }
-            // { EBattleStates.EnemyAttack, new EnemyAttackState(this) }
+            { EBattleStates.PlayerAttack, new PlayerAttackState(this) }
         };
         stateMachine.Initialize(states[0]);
     }
