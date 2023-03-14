@@ -42,4 +42,9 @@ public class UnitHealth : MonoBehaviour, IDamageable
     {
         this.healthBarUi.UpdateHealth(this.currentHealth, this.maxHealth);
     }
+
+    public int getCurrentHealth()
+    {
+        return this.currentHealth;
+    }
 }

@@ -6,7 +6,7 @@ public class MoveToTargetInSeconds : MonoBehaviour
 {
     public static event Action<GameObject> OnArrivedAtTarget = delegate { };
 
-    public void start(Vector3 target, float seconds)
+    public void move(Vector3 target, float seconds)
     {
         IEnumerator coroutine = MoveToTargetInSecondsCoroutine(target, seconds);
         StartCoroutine(coroutine);

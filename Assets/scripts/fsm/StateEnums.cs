@@ -3,5 +3,7 @@ public enum EBattleStates
     Intro,
     ActionSelect,
     PlayerAttack,
-    EnemyAttack
+    EnemyAttack,
+    Victory,
+    Defeat
 }
