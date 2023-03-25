@@ -12,12 +12,14 @@ public class BattleManager : MonoBehaviour
     public GameObject defeatScreen;
 
     public GameObject player;
+    public Animator playerAnimator;
     public GameObject[] enemies;
 
     void Awake()
     {
         stateMachine = new StateMachine();
         this.InitStates();
+        this.playerAnimator = this.player.GetComponent<Animator>();
     }
 
     private void InitStates()
