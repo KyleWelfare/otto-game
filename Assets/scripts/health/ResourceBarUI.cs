@@ -6,11 +6,15 @@ public class ResourceBarUI : MonoBehaviour
 {
     [SerializeField]
     private TMP_Text barText;
-    [SerializeField]
-    private Image fillBar;
+    private Slider slider;
 
     private int currentHealth;
     private int maxHealth;
+
+    void Awake()
+    {
+        this.slider = GetComponent<Slider>();
+    }
 
     public void UpdateHealth(int currentHealth, int maxHealth)
     {
@@ -27,13 +31,7 @@ public class ResourceBarUI : MonoBehaviour
 
     private void UpdateFill()
     {
-        float fillAmt = (float)this.currentHealth / (float)this.maxHealth;
-        // TODO OG-25 handle edge cases
-        // if (fillAmt < 1 && fillAmt > 0.91)
-        //     fillAmt = (float)0.91;
-        // else if (fillAmt > 0 && fillAmt < 0.083)
-        //     fillAmt = (float)0.1;
-
-        this.fillBar.fillAmount = fillAmt;
+        float hpPercent = (float)this.currentHealth / (float)this.maxHealth;
+        this.slider.value = hpPercent;
     }
 }

@@ -3,8 +3,7 @@ using UnityEngine.Events;
 
 public class UnitHealth : MonoBehaviour, IDamageable
 {
-    [SerializeField]
-    private ResourceBarUI healthBarUi;
+    public ResourceBarUI healthBarUi;
 
     [SerializeField] private int maxHealth;
     private int currentHealth;

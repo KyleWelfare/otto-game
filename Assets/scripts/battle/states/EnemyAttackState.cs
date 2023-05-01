@@ -17,4 +17,16 @@ public class EnemyAttackState : AttackState
             this.battleManager.ChangeState(EBattleStates.ActionSelect);
         }
     }
+
+    public override void Enter()
+    {
+        base.Enter();
+        this.attacker.GetComponent<UnitHealth>().healthBarUi.gameObject.SetActive(false);
+    }
+
+    public override void Exit()
+    {
+        base.Exit();
+        this.attacker.GetComponent<UnitHealth>().healthBarUi.gameObject.SetActive(true);
+    }
 }
